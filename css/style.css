@@ -479,8 +479,11 @@ footer span { color: var(--accent); }
     flex-direction: column;
     gap: 1.5rem;
   }
-
-  /* Fix text alignment */
+#hero {
+  min-height: auto;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
   .hero-left,
   .hero-right {
     width: 100%;
