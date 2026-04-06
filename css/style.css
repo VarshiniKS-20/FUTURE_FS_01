@@ -470,18 +470,32 @@ footer span { color: var(--accent); }
 
 @media (max-width: 768px) {
 
+  body {
+    overflow-x: hidden;
+  }
+
   #hero {
     display: flex !important;
     flex-direction: column !important;
     min-height: auto !important;
-    padding: 20px 10px !important;
+    padding: 20px 15px !important;
   }
 
   .hero-left,
   .hero-right {
-    width: 100%;
-    text-align: center;
-    margin-top: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    text-align: left;
+  }
+
+  h1 {
+    font-size: 28px !important;
+    line-height: 1.2;
+    word-wrap: break-word;
+  }
+
+  p {
+    font-size: 14px;
   }
 
   .contact-grid,
@@ -494,15 +508,4 @@ footer span { color: var(--accent); }
     height: auto;
   }
 
-  #mainNav {
-    margin-bottom: 0 !important;
-  }
-
-  section {
-    padding: 20px 10px;
-  }
-
-}
-body {
-  overflow-x: hidden;
 }
